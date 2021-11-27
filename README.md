@@ -6,6 +6,6 @@ The get_next_line project is aimed to teach you how to work with static variable
 
 ## Results
 
-**Score**: NaN
+**Score**: 100/100
 
-**Date**: NaN
+**Date**: 24-11-2021
