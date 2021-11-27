@@ -6,7 +6,7 @@
 /*   By: nismail <nismail@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/11/23 00:27:03 by nismail       #+#    #+#                 */
-/*   Updated: 2021/11/23 07:31:05 by nismail       ########   odam.nl         */
+/*   Updated: 2021/11/27 03:21:50 by navi          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,19 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdio.h> // REMOVE!!
 
 char	*get_next_line(int fd);
 
 size_t	ft_strlen(const char *str);
 char	*ft_strjoin(char const *str1, char const *str2);
 char	*ft_strchr(const char *str, int c);
+
+typedef struct s_files
+{
+	int				fd;
+	char			*data;
+	struct s_files	*next;
+}					t_files;
 
 #endif
