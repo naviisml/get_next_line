@@ -1,32 +1,11 @@
-# C Boilerplate
+# get_next_line
 
-This is a C Boilerplate for my future C projects on Codam. This boilerplate allows me to start projects swiftly with a pre-made template.
+The get_next_line project is aimed to teach you how to work with static variables. The subject is to make a function that reads the next line of a file, based on a buffer size defined during compilation using the flag `-D BUFFER_SIZE=<amount>`. If there is no new line, or if the function fails, the function will return (NULL).
 
-To use this boilerplate, simply edit the basic configuration in the Makefile and add your files to the SOURCE_FILES list. After that, run the ’all‘ command.
+*We were not allowed to use our [libft](https://github.com/naviisml/libft) for this project.*
 
-## Requirements
+## Results
 
-- Make
-- C
+**Score**: NaN
 
-## Commands
-
-To build the program in the final stage, the `all` rule as followed in a terminal;
-```
-make all
-```
-
-To build the final script, and run it after compilation, you may use the `dev` command used as followed in a terminal;
-```
-make dev
-```
-
-To clean up the `objects/` files and folder, you can use the `clean` command as followed in a terminal;
-```
-make clean
-```
-
-To remove both the `objects/` files, the `build` files and the compiled program file, you can simply use the `fclean` command as followed in a terminal;
-```
-make fclean
-```
+**Date**: NaN
