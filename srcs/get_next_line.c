@@ -6,7 +6,7 @@
 /*   By: nismail <nismail@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/11/23 04:14:45 by nismail       #+#    #+#                 */
-/*   Updated: 2021/11/27 03:23:54 by navi          ########   odam.nl         */
+/*   Updated: 2021/12/06 02:13:58 by navi          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 /*
  * The read_next_line() function ...
  */
-
 static char	*read_next_line(char *data)
 {
 	int		i;
@@ -47,7 +46,6 @@ static char	*read_next_line(char *data)
 /*
  * The move_next_line() function ...
  */
-
 static char	*move_next_line(char *data)
 {
 	char	*tmp;
@@ -77,9 +75,8 @@ static char	*move_next_line(char *data)
 }
 
 /*
- * The read_file() function ...
+ * The open_file() function ...
  */
-
 static char	*open_file(int fd, char *data)
 {
 	char	*fdata;
@@ -105,6 +102,9 @@ static char	*open_file(int fd, char *data)
 	return (data);
 }
 
+/*
+ * The search_files() function ...
+ */
 static t_files	*search_files(int fd)
 {
 	static t_files	files;
@@ -131,7 +131,6 @@ static t_files	*search_files(int fd)
  * the '\n' or '\0' and returns the next line found, if no line can be
  * found, or if a error has occurred, the function returns NULL
  */
-
 char	*get_next_line(int fd)
 {
 	t_files		*file;
